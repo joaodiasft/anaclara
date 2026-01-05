@@ -1206,18 +1206,24 @@ export default function Home() {
       {/* Modal de Imagem Grande */}
       {selectedImage && (
         <div
-          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4 cursor-pointer"
           onClick={() => setSelectedImage(null)}
         >
           <button
-            className="absolute top-4 right-4 text-white hover:text-gray-300"
-            onClick={() => setSelectedImage(null)}
+            className="absolute top-4 right-4 z-50 rounded-full bg-white/90 hover:bg-white p-3 shadow-2xl text-gray-700 hover:text-gray-900 hover:scale-110 transition-all"
+            onClick={(e) => {
+              e.stopPropagation();
+              setSelectedImage(null);
+            }}
             aria-label="Fechar imagem"
-            title="Fechar"
+            title="Fechar (ESC)"
           >
-            <X className="w-8 h-8" />
+            <X className="w-6 h-6" />
           </button>
-          <div className="relative max-w-4xl max-h-[90vh] w-full h-full">
+          <div
+            className="relative max-w-4xl max-h-[90vh] w-full h-full cursor-default"
+            onClick={(e) => e.stopPropagation()}
+          >
             <Image
               src={selectedImage}
               alt="Imagem ampliada - Studio Clara"
@@ -1231,6 +1237,9 @@ export default function Home() {
                 target.style.display = "none";
               }}
             />
+          </div>
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 text-white px-4 py-2 rounded-lg text-sm pointer-events-none">
+            Clique fora ou pressione ESC para fechar
           </div>
         </div>
       )}
