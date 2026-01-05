@@ -129,7 +129,6 @@ export default function Home() {
     "https://i.im.ge/2026/01/05/GT7Gor.5.jpeg",
     "https://i.im.ge/2026/01/05/GT7njf.4.jpeg",
     "https://i.im.ge/2026/01/05/GTDQBT.3.jpeg",
-    "https://i.im.ge/2026/01/05/GTDosc.SaveClip-App-435583670-977973797451710-578432016358071620-n.jpeg",
     "https://i.im.ge/2026/01/06/GTLzs6.WhatsApp-Image-2026-01-05-at-15-51-30-1.jpeg",
     "https://i.im.ge/2026/01/06/GTLf4z.WhatsApp-Image-2026-01-05-at-15-51-30-2.jpeg",
     "https://i.im.ge/2026/01/06/GTLVYS.WhatsApp-Image-2026-01-05-at-15-51-30.jpeg",
