@@ -367,8 +367,8 @@ export default function Home() {
               </CardContent>
             </Card>
           </DialogTrigger>
-          <DialogContent className="max-w-5xl max-h-[95vh] overflow-y-auto bg-gradient-to-b from-white via-[#FFF7FB] to-white p-0">
-            <div className="sticky top-0 z-10 bg-gradient-to-r from-[#FAD1E8] to-[#F7B7D2] p-6 border-b border-primary/20">
+          <DialogContent className="max-w-5xl max-h-[95vh] overflow-y-auto bg-gradient-to-b from-white via-[#FFF7FB] to-white p-0 rounded-3xl shadow-2xl border-2 border-primary/20">
+            <div className="sticky top-0 z-10 bg-gradient-to-r from-[#FAD1E8] to-[#F7B7D2] p-6 border-b border-primary/20 rounded-t-3xl">
               <DialogHeader className="mb-0">
                 <DialogTitle className="text-3xl font-bold text-[#111827] flex items-center gap-3">
                   <div className="p-2 bg-white/80 rounded-lg">
