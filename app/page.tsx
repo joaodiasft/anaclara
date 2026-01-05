@@ -124,14 +124,15 @@ export default function Home() {
   };
 
   const portfolioImages = [
-    "https://i.im.ge/2026/01/05/GTDMY0.1.jpeg",
     "https://i.im.ge/2026/01/05/GT7eUW.7.jpeg",
     "https://i.im.ge/2026/01/05/GT74Wm.6.jpeg",
     "https://i.im.ge/2026/01/05/GT7Gor.5.jpeg",
     "https://i.im.ge/2026/01/05/GT7njf.4.jpeg",
     "https://i.im.ge/2026/01/05/GTDQBT.3.jpeg",
-    "https://i.im.ge/2026/01/05/GTDXyL.2.jpeg",
     "https://i.im.ge/2026/01/05/GTDosc.SaveClip-App-435583670-977973797451710-578432016358071620-n.jpeg",
+    "https://i.im.ge/2026/01/06/GTLzs6.WhatsApp-Image-2026-01-05-at-15-51-30-1.jpeg",
+    "https://i.im.ge/2026/01/06/GTLf4z.WhatsApp-Image-2026-01-05-at-15-51-30-2.jpeg",
+    "https://i.im.ge/2026/01/06/GTLVYS.WhatsApp-Image-2026-01-05-at-15-51-30.jpeg",
   ];
 
   const localImages = [
@@ -452,8 +453,8 @@ export default function Home() {
               </CardContent>
             </Card>
           </DialogTrigger>
-          <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto bg-gradient-to-b from-white via-[#FFF7FB] to-white p-0">
-            <div className="sticky top-0 z-10 bg-gradient-to-r from-accent/20 via-primary/20 to-accent/20 p-6 border-b border-primary/20">
+          <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto bg-gradient-to-b from-white via-[#FFF7FB] to-white p-0 rounded-3xl shadow-2xl border-2 border-primary/20">
+            <div className="sticky top-0 z-10 bg-gradient-to-r from-accent/20 via-primary/20 to-accent/20 p-6 border-b border-primary/20 rounded-t-3xl">
               <DialogHeader className="mb-0">
                 <DialogTitle className="text-3xl font-bold text-[#111827] flex items-center gap-3">
                   <div className="p-2 bg-white/80 rounded-lg">
@@ -549,8 +550,8 @@ export default function Home() {
               </CardContent>
             </Card>
           </DialogTrigger>
-          <DialogContent className="max-w-5xl max-h-[95vh] overflow-y-auto bg-gradient-to-b from-white via-[#FFF7FB] to-white p-0">
-            <div className="sticky top-0 z-10 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 p-6 border-b border-primary/20">
+          <DialogContent className="max-w-5xl max-h-[95vh] overflow-y-auto bg-gradient-to-b from-white via-[#FFF7FB] to-white p-0 rounded-3xl shadow-2xl border-2 border-primary/20">
+            <div className="sticky top-0 z-10 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 p-6 border-b border-primary/20 rounded-t-3xl">
               <DialogHeader className="mb-0">
                 <DialogTitle className="text-3xl font-bold text-[#111827] flex items-center gap-3">
                   <div className="p-2 bg-white/80 rounded-lg">
