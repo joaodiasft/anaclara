@@ -66,6 +66,26 @@ export default function Home() {
     if (saved) setLastClicked(saved);
   }, []);
 
+  // Fechar modais com ESC
+  useEffect(() => {
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        if (selectedImage) {
+          setSelectedImage(null);
+        } else if (portfolioOpen) {
+          setPortfolioOpen(false);
+        } else if (pricesOpen) {
+          setPricesOpen(false);
+        } else if (locationOpen) {
+          setLocationOpen(false);
+        }
+      }
+    };
+
+    window.addEventListener("keydown", handleEscape);
+    return () => window.removeEventListener("keydown", handleEscape);
+  }, [selectedImage, portfolioOpen, pricesOpen, locationOpen]);
+
   const testimonials = [
     {
       text: "Unhas perfeitas e duradouras! A Clara é incrível, super atenciosa e caprichosa. Recomendo de olhos fechados! 💗",
@@ -125,8 +145,6 @@ export default function Home() {
 
   const portfolioImages = [
     "https://i.im.ge/2026/01/05/GT7eUW.7.jpeg",
-    "https://i.im.ge/2026/01/05/GT74Wm.6.jpeg",
-    "https://i.im.ge/2026/01/05/GT7Gor.5.jpeg",
     "https://i.im.ge/2026/01/05/GT7njf.4.jpeg",
     "https://i.im.ge/2026/01/05/GTDQBT.3.jpeg",
     "https://i.im.ge/2026/01/06/GTLzs6.WhatsApp-Image-2026-01-05-at-15-51-30-1.jpeg",
